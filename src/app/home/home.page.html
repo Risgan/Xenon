@@ -1,20 +1,45 @@
-<ion-header [translucent]="true">
+<!-- <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
       Blank
     </ion-title>
   </ion-toolbar>
-</ion-header>
+</ion-header> -->
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
+
+<ion-content [fullscreen]="false">
+  <!-- <ion-header collapse="condense">
     <ion-toolbar>
       <ion-title size="large">Blank</ion-title>
     </ion-toolbar>
-  </ion-header>
+  </ion-header> -->
 
-  <div id="container">
+  <!-- <div id="container">
     <strong>Ready to create an app?</strong>
     <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  </div> -->
+  <ion-router-outlet></ion-router-outlet>
 </ion-content>
+
+<ion-tabs>
+  <!-- <ion-router-outlet></ion-router-outlet> -->
+
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="dashboard">
+      <ion-icon name="home"></ion-icon>
+      home
+    </ion-tab-button>
+    <ion-tab-button tab="Movimientos">
+      <ion-icon name="trail-sign-outline"></ion-icon>
+      Movimientos
+    </ion-tab-button>
+    <ion-tab-button tab="Balance">
+      <ion-icon name="bar-chart-outline"></ion-icon>
+      Balance
+    </ion-tab-button>
+    <ion-tab-button tab="Perfil">
+      <ion-icon name="person-circle-outline"></ion-icon>
+      Perfil
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>
